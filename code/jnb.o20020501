@@ -1,0 +1,205 @@
+/home/smazurchuk/.bashrc: line 14: Export: command not found
+
+1. SSH tunnel from your workstation using the following command:
+  
+   ssh -L 8322:kepler04:8322 smazurchuk@tesla.rcc.mcw.edu
+  
+   and point your web browser to http://localhost:8322.
+
+2. Copy/paste the token below when you connect for the first time.
+
+[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-debugdump'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-persistenced'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-cuda-mps-control'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-cuda-mps-server'
+[0m[I 18:19:00.438 NotebookApp] JupyterLab extension loaded from /usr/local/lib/python3.5/dist-packages/jupyterlab
+[I 18:19:00.438 NotebookApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 18:19:00.441 NotebookApp] Serving notebooks from local directory: /home/smazurchuk/BM/code
+[I 18:19:00.441 NotebookApp] The Jupyter Notebook is running at:
+[I 18:19:00.441 NotebookApp] http://kepler04:8322/?token=262113b4fa7a6dff6a200f58e6f632037a7d9c8e23e084e0
+[I 18:19:00.441 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:19:00.454 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/smazurchuk/.local/share/jupyter/runtime/nbserver-31917-open.html
+    Or copy and paste one of these URLs:
+        http://kepler04:8322/?token=262113b4fa7a6dff6a200f58e6f632037a7d9c8e23e084e0
+[I 18:19:48.808 NotebookApp] 302 GET / (141.106.226.90) 0.93ms
+[I 18:19:48.848 NotebookApp] 302 GET /tree? (141.106.226.90) 1.04ms
+[W 18:19:58.858 NotebookApp] Not allowing login redirect to '/tree?'
+[I 18:19:58.860 NotebookApp] 302 POST /login?next=%2Ftree%3F (141.106.226.90) 3.77ms
+[I 18:19:58.868 NotebookApp] 302 GET / (141.106.226.90) 0.56ms
+[I 18:20:06.036 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9741c9ef-f3ec-426a-bc2e-ff5b974c1953.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9741c9ef-f3ec-426a-bc2e-ff5b974c1953.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:20:07.179 NotebookApp] Kernel started: 9741c9ef-f3ec-426a-bc2e-ff5b974c1953
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9741c9ef-f3ec-426a-bc2e-ff5b974c1953.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9741c9ef-f3ec-426a-bc2e-ff5b974c1953.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:20:09.179 NotebookApp] Adapting to protocol v5.1 for kernel 9741c9ef-f3ec-426a-bc2e-ff5b974c1953
+[I 18:21:02.904 NotebookApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 18:22:07.165 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:26:07.161 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:28:07.150 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:30:07.150 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:30:43.727 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:30:46.757 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-76b9dcdb-0813-4ae5-93c7-ea408c99224b.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-76b9dcdb-0813-4ae5-93c7-ea408c99224b.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[E 18:30:47.587 NotebookApp] Failed to run command:
+    ['/rcc/shared/apps/python/3.6.4/bin/python3.6', '-m', 'ipykernel_launcher', '-f', '/home/smazurchuk/.local/share/jupyter/runtime/kernel-76b9dcdb-0813-4ae5-93c7-ea408c99224b.json']
+        PATH='/usr/local/bin:/cuda/bin:/nvidia:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+        with kwargs:
+    {'cwd': '/home/smazurchuk/BM/code', 'stdout': None, 'stdin': -1, 'stderr': None, 'start_new_session': True}
+    
+[E 18:30:47.588 NotebookApp] Uncaught exception POST /api/sessions (141.106.226.90)
+    HTTPServerRequest(protocol='http', host='localhost:8322', method='POST', uri='/api/sessions', version='HTTP/1.1', remote_ip='141.106.226.90')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.5/dist-packages/tornado/web.py", line 1699, in _execute
+        result = await result
+      File "/usr/lib/python3.5/asyncio/futures.py", line 363, in __iter__
+        return self.result()  # May raise too.
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 736, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/handlers.py", line 73, in post
+        type=mtype))
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 729, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 736, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/sessionmanager.py", line 79, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 729, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 736, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/sessionmanager.py", line 92, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 729, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 209, in wrapper
+        yielded = next(result)
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/kernels/kernelmanager.py", line 160, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/multikernelmanager.py", line 110, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/manager.py", line 259, in start_kernel
+        **kw)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/manager.py", line 204, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/launcher.py", line 138, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/usr/lib/python3.5/subprocess.py", line 947, in __init__
+        restore_signals, start_new_session)
+      File "/usr/lib/python3.5/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg)
+    FileNotFoundError: [Errno 2] No such file or directory: '/rcc/shared/apps/python/3.6.4/bin/python3.6'
+[W 18:30:47.598 NotebookApp] Unhandled error
+[E 18:30:47.599 NotebookApp] {
+      "X-Xsrftoken": "2|31f17884|72aeb8f2611ef243e453b696f5ff84bf|1561476206",
+      "Cookie": "_xsrf=2|31f17884|72aeb8f2611ef243e453b696f5ff84bf|1561476206; username-localhost-8899=\"2|1:0|10:1561480127|23:username-localhost-8899|44:NmJmN2QxZDMxZWI2NDI4NTg2ZmIxMDE1MTgyZTI3MDA=|db4757cc0ce43e94ae3d5153203e94c6378cb8d529c6e25e8f65b75cba3676b6\"; username-localhost-9875=\"2|1:0|10:1561486044|23:username-localhost-9875|44:NDk2OWJhNjZjODVhNDY1MDk5NTI0Y2E0YmExZDEwN2Q=|2d99b56dbbaf033ffe75d6401805ec2f78ef4ebe932da57ade0fdecf1600980c\"; username-localhost-8826=\"2|1:0|10:1561486544|23:username-localhost-8826|44:YmNiNjU5ZjVkYzliNDYyMjg4YmM1MzRhNzllZDYzNzY=|a4b0704a9aff2ddb8c4a6dad49a7e2cf88e06d6688901fcbae5a68f236e6c774\"; username-localhost-8322=\"2|1:0|10:1561486798|23:username-localhost-8322|44:OGM5ZWE0YzUyNWJiNGU0ZmJmZDFjNjBiMGU4NDI2N2Y=|3b794d3baafb7b9997055b07dc907e45a93f0c14556e47baea78f4ebcb61df26\"",
+      "Referer": "http://localhost:8322/notebooks/Untitled4.ipynb?kernel_name=topicembedding",
+      "Accept-Encoding": "gzip, deflate",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Accept-Language": "en-US,en;q=0.5",
+      "X-Requested-With": "XMLHttpRequest",
+      "Connection": "keep-alive",
+      "Host": "localhost:8322",
+      "Content-Length": "99",
+      "Content-Type": "application/json",
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0"
+    }
+[E 18:30:47.599 NotebookApp] 500 POST /api/sessions (141.106.226.90) 31.23ms referer=http://localhost:8322/notebooks/Untitled4.ipynb?kernel_name=topicembedding
+[I 18:32:35.163 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-1db05f18-6150-4e40-ba2e-b36f17e4c018.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-1db05f18-6150-4e40-ba2e-b36f17e4c018.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:32:36.041 NotebookApp] Kernel started: 1db05f18-6150-4e40-ba2e-b36f17e4c018
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-1db05f18-6150-4e40-ba2e-b36f17e4c018.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-1db05f18-6150-4e40-ba2e-b36f17e4c018.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:32:38.009 NotebookApp] Adapting to protocol v5.1 for kernel 1db05f18-6150-4e40-ba2e-b36f17e4c018
+[I 18:32:47.132 NotebookApp] Saving file at /Untitled5.ipynb
+[I 18:32:47.325 NotebookApp] Starting buffering for 1db05f18-6150-4e40-ba2e-b36f17e4c018:56b9b73fcc904660afa4ff11a949ff8e
+[I 18:32:47.594 NotebookApp] Saving file at /Untitled4.ipynb
+[I 18:34:07.188 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:36:07.161 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:40:07.152 NotebookApp] Saving file at /Untitled3.ipynb
+[I 18:40:25.380 NotebookApp] Starting buffering for 9741c9ef-f3ec-426a-bc2e-ff5b974c1953:fccce569e9f243fa802f6d1a3a8801b7
+Websocket closed
+[I 18:40:40.528 NotebookApp] Kernel shutdown: 1db05f18-6150-4e40-ba2e-b36f17e4c018
+[W 18:40:40.537 NotebookApp] delete /Untitled.ipynb
+[W 18:40:40.573 NotebookApp] delete /Untitled1.ipynb
+[W 18:40:40.603 NotebookApp] delete /Untitled2.ipynb
+[W 18:40:40.632 NotebookApp] delete /Untitled4.ipynb
+[W 18:40:40.658 NotebookApp] delete /Untitled5.ipynb
+[I 18:40:44.109 NotebookApp] Kernel shutdown: 9741c9ef-f3ec-426a-bc2e-ff5b974c1953
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:40:47.441 NotebookApp] Kernel started: ff09607d-4b21-461e-93d0-156cf9b18adf
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:40:49.390 NotebookApp] Adapting to protocol v5.1 for kernel ff09607d-4b21-461e-93d0-156cf9b18adf
+[I 18:41:36.183 NotebookApp] Starting buffering for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:41:36.511 NotebookApp] Kernel restarted: ff09607d-4b21-461e-93d0-156cf9b18adf
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:41:38.527 NotebookApp] Adapting to protocol v5.1 for kernel ff09607d-4b21-461e-93d0-156cf9b18adf
+[I 18:41:38.528 NotebookApp] Restoring connection for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:41:38.528 NotebookApp] Replaying 10 buffered messages
+[I 18:42:28.311 NotebookApp] Starting buffering for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:42:28.725 NotebookApp] Kernel restarted: ff09607d-4b21-461e-93d0-156cf9b18adf
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:42:30.667 NotebookApp] Adapting to protocol v5.1 for kernel ff09607d-4b21-461e-93d0-156cf9b18adf
+[I 18:42:30.668 NotebookApp] Restoring connection for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:42:30.668 NotebookApp] Replaying 10 buffered messages
+[I 18:42:47.450 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:43:17.335 NotebookApp] Starting buffering for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:43:17.649 NotebookApp] Kernel restarted: ff09607d-4b21-461e-93d0-156cf9b18adf
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-ff09607d-4b21-461e-93d0-156cf9b18adf.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:43:19.606 NotebookApp] Adapting to protocol v5.1 for kernel ff09607d-4b21-461e-93d0-156cf9b18adf
+[I 18:43:19.607 NotebookApp] Restoring connection for ff09607d-4b21-461e-93d0-156cf9b18adf:7f35c1aadda4419f84dd3fedfd4bedb4
+[I 18:43:19.607 NotebookApp] Replaying 10 buffered messages
+[I 18:44:47.446 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:46:14.530 NotebookApp] New terminal with automatic name: 2
+TermSocket.open: 2
+TermSocket.open: Opened 2
+Websocket closed
+[I 18:46:47.446 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:48:47.449 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:52:47.448 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:54:47.449 NotebookApp] Saving file at /Try_latent.ipynb
+[I 18:55:12.857 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9cad117d-4bb1-426d-acbc-40fba9fd4f1a.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9cad117d-4bb1-426d-acbc-40fba9fd4f1a.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:55:13.610 NotebookApp] Kernel started: 9cad117d-4bb1-426d-acbc-40fba9fd4f1a
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9cad117d-4bb1-426d-acbc-40fba9fd4f1a.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-9cad117d-4bb1-426d-acbc-40fba9fd4f1a.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 18:55:15.536 NotebookApp] Adapting to protocol v5.1 for kernel 9cad117d-4bb1-426d-acbc-40fba9fd4f1a
+[I 18:57:13.667 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:01:15.951 NotebookApp] Kernel shutdown: 9cad117d-4bb1-426d-acbc-40fba9fd4f1a
+[W 19:01:15.959 NotebookApp] delete /Untitled.ipynb
+[I 19:01:19.353 NotebookApp] Kernel shutdown: ff09607d-4b21-461e-93d0-156cf9b18adf
+[I 19:01:21.206 NotebookApp] Shutting down on /api/shutdown request.
+[I 19:01:21.212 NotebookApp] Shutting down 0 kernels

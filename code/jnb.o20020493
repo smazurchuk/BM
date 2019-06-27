@@ -1,0 +1,47 @@
+/home/smazurchuk/.bashrc: line 14: Export: command not found
+
+1. SSH tunnel from your workstation using the following command:
+  
+   ssh -L 8899:kepler04:8899 smazurchuk@tesla.rcc.mcw.edu
+  
+   and point your web browser to http://localhost:8899.
+
+2. Copy/paste the token below when you connect for the first time.
+
+[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-debugdump'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-persistenced'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-cuda-mps-control'
+[0m[33mWARNING: Skipping user bind, non existent bind point (file) in container: '/usr/bin/nvidia-cuda-mps-server'
+[0m[I 15:21:48.163 NotebookApp] JupyterLab extension loaded from /usr/local/lib/python3.5/dist-packages/jupyterlab
+[I 15:21:48.164 NotebookApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 15:21:48.166 NotebookApp] Serving notebooks from local directory: /home/smazurchuk/BM/code
+[I 15:21:48.166 NotebookApp] The Jupyter Notebook is running at:
+[I 15:21:48.166 NotebookApp] http://kepler04:8899/?token=50f974799b0d58820f51865169fee3e643d81d34574aae5f
+[I 15:21:48.166 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 15:21:48.238 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///home/smazurchuk/.local/share/jupyter/runtime/nbserver-13896-open.html
+    Or copy and paste one of these URLs:
+        http://kepler04:8899/?token=50f974799b0d58820f51865169fee3e643d81d34574aae5f
+[I 15:23:26.029 NotebookApp] 302 GET / (141.106.226.90) 0.93ms
+[I 15:23:26.033 NotebookApp] 302 GET /tree? (141.106.226.90) 0.85ms
+[W 15:23:42.227 NotebookApp] Not allowing login redirect to '/tree?'
+[I 15:23:42.228 NotebookApp] 302 POST /login?next=%2Ftree%3F (141.106.226.90) 2.34ms
+[I 15:23:42.231 NotebookApp] 302 GET / (141.106.226.90) 0.55ms
+[I 15:23:49.323 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-2c86da28-db6d-447e-a360-ed3e3556652b.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-2c86da28-db6d-447e-a360-ed3e3556652b.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 15:23:50.808 NotebookApp] Kernel started: 2c86da28-db6d-447e-a360-ed3e3556652b
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-2c86da28-db6d-447e-a360-ed3e3556652b.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-2c86da28-db6d-447e-a360-ed3e3556652b.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 15:23:52.857 NotebookApp] Adapting to protocol v5.1 for kernel 2c86da28-db6d-447e-a360-ed3e3556652b
+[I 15:25:50.791 NotebookApp] Saving file at /Untitled.ipynb
+[I 15:27:09.034 NotebookApp] 302 GET /tree? (141.106.226.90) 1.07ms
+[I 16:28:46.717 NotebookApp] Saving file at /Untitled.ipynb
+[I 16:28:47.612 NotebookApp] Starting buffering for 2c86da28-db6d-447e-a360-ed3e3556652b:6fadf511884743508b4f40c59c37407b
+[I 16:28:50.207 NotebookApp] Shutting down on /api/shutdown request.
+[I 16:28:50.219 NotebookApp] Shutting down 1 kernel
+[I 16:28:51.222 NotebookApp] Kernel shutdown: 2c86da28-db6d-447e-a360-ed3e3556652b

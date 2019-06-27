@@ -1,0 +1,148 @@
+/home/smazurchuk/.bashrc: line 14: Export: command not found
+
+1. SSH tunnel from your workstation using the following command:
+  
+   ssh -L 9499:carley01:9499 smazurchuk@login02.rcc.mcw.edu
+  
+   and point your web browser to http://localhost:9499.
+
+2. Copy/paste the token below when you connect for the first time.
+
+[I 19:06:02.232 NotebookApp] Serving notebooks from local directory: /home/smazurchuk/BM/latent
+[I 19:06:02.232 NotebookApp] The Jupyter Notebook is running at:
+[I 19:06:02.232 NotebookApp] http://carley01:9499/?token=942845a5071c14cedd371e5599f8f1ef2610a19af200c6e0
+[I 19:06:02.232 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 19:06:02.236 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://carley01:9499/?token=942845a5071c14cedd371e5599f8f1ef2610a19af200c6e0
+[I 19:09:27.002 NotebookApp] 302 GET / (172.16.1.77) 0.58ms
+[I 19:09:27.008 NotebookApp] 302 GET /tree? (172.16.1.77) 0.67ms
+[I 19:09:32.444 NotebookApp] 302 POST /login?next=%2Ftree%3F (172.16.1.77) 1.27ms
+[I 19:09:48.568 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-60c34fde-cd1d-400d-9fa7-a3128db45694.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-60c34fde-cd1d-400d-9fa7-a3128db45694.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:09:49.966 NotebookApp] Kernel started: 60c34fde-cd1d-400d-9fa7-a3128db45694
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-60c34fde-cd1d-400d-9fa7-a3128db45694.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-60c34fde-cd1d-400d-9fa7-a3128db45694.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:09:50.563 NotebookApp] Adapting to protocol v5.1 for kernel 60c34fde-cd1d-400d-9fa7-a3128db45694
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:11:16.306 NotebookApp] Kernel started: 52f20129-7fe0-4453-82a9-6f1d2272ff46
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:11:16.893 NotebookApp] Adapting to protocol v5.1 for kernel 52f20129-7fe0-4453-82a9-6f1d2272ff46
+[I 19:11:18.092 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:11:18.241 NotebookApp] Starting buffering for 60c34fde-cd1d-400d-9fa7-a3128db45694:bd57d16d7a7549f7bcc1ed0196deed9d
+[I 19:11:37.479 NotebookApp] Kernel shutdown: 60c34fde-cd1d-400d-9fa7-a3128db45694
+[W 19:11:37.481 NotebookApp] delete /Untitled.ipynb
+[I 19:12:09.247 NotebookApp] 302 GET /tree? (172.16.1.77) 0.61ms
+[I 19:13:16.326 NotebookApp] Saving file at /Try_latent_carley.ipynb
+[I 19:32:53.355 NotebookApp] Creating new notebook in 
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-8eada003-debd-4231-85cd-09c7997757aa.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-8eada003-debd-4231-85cd-09c7997757aa.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[E 19:32:54.076 NotebookApp] Failed to run command:
+    ['/rcc/shared/apps/python/3.6.4/bin/python3.6', '-m', 'ipykernel_launcher', '-f', '/home/smazurchuk/.local/share/jupyter/runtime/kernel-8eada003-debd-4231-85cd-09c7997757aa.json']
+        PATH='/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+        with kwargs:
+    {'stdin': -1, 'cwd': '/home/smazurchuk/BM/latent', 'stdout': None, 'start_new_session': True, 'stderr': None}
+    
+[E 19:32:54.076 NotebookApp] Uncaught exception POST /api/sessions (172.16.1.77)
+    HTTPServerRequest(protocol='http', host='localhost:9499', method='POST', uri='/api/sessions', version='HTTP/1.1', remote_ip='172.16.1.77')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.5/dist-packages/tornado/web.py", line 1592, in _execute
+        result = yield result
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1133, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1141, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/handlers.py", line 73, in post
+        type=mtype))
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1133, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1141, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/sessionmanager.py", line 79, in create_session
+        kernel_id = yield self.start_kernel_for_session(session_id, path, name, type, kernel_name)
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1133, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1141, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/sessions/sessionmanager.py", line 92, in start_kernel_for_session
+        self.kernel_manager.start_kernel(path=kernel_path, kernel_name=kernel_name)
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 1133, in run
+        value = future.result()
+      File "/usr/lib/python3.5/asyncio/futures.py", line 274, in result
+        raise self._exception
+      File "/usr/local/lib/python3.5/dist-packages/tornado/gen.py", line 326, in wrapper
+        yielded = next(result)
+      File "/usr/local/lib/python3.5/dist-packages/notebook/services/kernels/kernelmanager.py", line 160, in start_kernel
+        super(MappingKernelManager, self).start_kernel(**kwargs)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/multikernelmanager.py", line 110, in start_kernel
+        km.start_kernel(**kwargs)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/manager.py", line 259, in start_kernel
+        **kw)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/manager.py", line 204, in _launch_kernel
+        return launch_kernel(kernel_cmd, **kw)
+      File "/usr/local/lib/python3.5/dist-packages/jupyter_client/launcher.py", line 128, in launch_kernel
+        proc = Popen(cmd, **kwargs)
+      File "/usr/lib/python3.5/subprocess.py", line 947, in __init__
+        restore_signals, start_new_session)
+      File "/usr/lib/python3.5/subprocess.py", line 1551, in _execute_child
+        raise child_exception_type(errno_num, err_msg)
+    FileNotFoundError: [Errno 2] No such file or directory: '/rcc/shared/apps/python/3.6.4/bin/python3.6'
+[W 19:32:54.087 NotebookApp] Unhandled error
+[E 19:32:54.087 NotebookApp] {
+      "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0",
+      "X-Requested-With": "XMLHttpRequest",
+      "Referer": "http://localhost:9499/notebooks/Untitled.ipynb?kernel_name=topicembedding",
+      "Content-Type": "application/json",
+      "Connection": "keep-alive",
+      "Accept-Encoding": "gzip, deflate",
+      "Content-Length": "98",
+      "Cookie": "_xsrf=2|31f17884|72aeb8f2611ef243e453b696f5ff84bf|1561476206; username-localhost-8899=\"2|1:0|10:1561480127|23:username-localhost-8899|44:NmJmN2QxZDMxZWI2NDI4NTg2ZmIxMDE1MTgyZTI3MDA=|db4757cc0ce43e94ae3d5153203e94c6378cb8d529c6e25e8f65b75cba3676b6\"; username-localhost-9875=\"2|1:0|10:1561486044|23:username-localhost-9875|44:NDk2OWJhNjZjODVhNDY1MDk5NTI0Y2E0YmExZDEwN2Q=|2d99b56dbbaf033ffe75d6401805ec2f78ef4ebe932da57ade0fdecf1600980c\"; username-localhost-8826=\"2|1:0|10:1561486544|23:username-localhost-8826|44:YmNiNjU5ZjVkYzliNDYyMjg4YmM1MzRhNzllZDYzNzY=|a4b0704a9aff2ddb8c4a6dad49a7e2cf88e06d6688901fcbae5a68f236e6c774\"; username-localhost-8322=\"2|1:0|10:1561486798|23:username-localhost-8322|44:OGM5ZWE0YzUyNWJiNGU0ZmJmZDFjNjBiMGU4NDI2N2Y=|3b794d3baafb7b9997055b07dc907e45a93f0c14556e47baea78f4ebcb61df26\"; username-localhost-9499=\"2|1:0|10:1561489772|23:username-localhost-9499|44:MWQzYzVlZGI5NDRmNDNmYTgyNjA2NzUxODAwZWJlZjg=|a871d60440f8fc25ec5ac35715d440d35e332fc11130bf61f1df3baa544aea1d\"",
+      "X-Xsrftoken": "2|31f17884|72aeb8f2611ef243e453b696f5ff84bf|1561476206",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Host": "localhost:9499",
+      "Accept-Language": "en-US,en;q=0.5"
+    }
+[E 19:32:54.087 NotebookApp] 500 POST /api/sessions (172.16.1.77) 26.24ms referer=http://localhost:9499/notebooks/Untitled.ipynb?kernel_name=topicembedding
+[I 19:34:54.095 NotebookApp] Saving file at /Untitled.ipynb
+[I 19:41:16.326 NotebookApp] Saving file at /Try_latent_carley.ipynb
+[I 19:43:16.317 NotebookApp] Saving file at /Try_latent_carley.ipynb
+[I 19:43:31.514 NotebookApp] Starting buffering for 52f20129-7fe0-4453-82a9-6f1d2272ff46:91424b4d19c541538686ee0f8a01c85e
+[I 19:43:31.924 NotebookApp] Kernel restarted: 52f20129-7fe0-4453-82a9-6f1d2272ff46
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:43:32.478 NotebookApp] Adapting to protocol v5.1 for kernel 52f20129-7fe0-4453-82a9-6f1d2272ff46
+[I 19:43:32.479 NotebookApp] Restoring connection for 52f20129-7fe0-4453-82a9-6f1d2272ff46:91424b4d19c541538686ee0f8a01c85e
+[I 19:43:32.479 NotebookApp] Replaying 3 buffered messages
+[I 19:44:00.059 NotebookApp] New terminal with automatic name: 1
+[I 19:45:16.327 NotebookApp] Saving file at /Try_latent_carley.ipynb
+[I 19:46:51.188 NotebookApp] Starting buffering for 52f20129-7fe0-4453-82a9-6f1d2272ff46:91424b4d19c541538686ee0f8a01c85e
+[I 19:46:51.599 NotebookApp] Kernel restarted: 52f20129-7fe0-4453-82a9-6f1d2272ff46
+/usr/local/lib/python3.5/dist-packages/jupyter_client/connect.py:163: RuntimeWarning: Failed to set sticky bit on '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json': [Errno 22] Invalid argument: '/home/smazurchuk/.local/share/jupyter/runtime/kernel-52f20129-7fe0-4453-82a9-6f1d2272ff46.json'
+Probably not a big deal, but runtime files may be cleaned up periodically.
+  RuntimeWarning,
+[I 19:46:52.461 NotebookApp] Adapting to protocol v5.1 for kernel 52f20129-7fe0-4453-82a9-6f1d2272ff46
+[I 19:46:52.461 NotebookApp] Restoring connection for 52f20129-7fe0-4453-82a9-6f1d2272ff46:91424b4d19c541538686ee0f8a01c85e
+[I 19:46:52.462 NotebookApp] Replaying 6 buffered messages
+[I 19:47:10.437 NotebookApp] Saving file at /Try_latent_carley.ipynb
+[I 19:47:11.105 NotebookApp] Starting buffering for 52f20129-7fe0-4453-82a9-6f1d2272ff46:91424b4d19c541538686ee0f8a01c85e
+=>> PBS: job killed: walltime 28806 exceeded limit 28800
+Warning: Permanently added 'carley01,172.16.1.51' (RSA) to the list of known hosts.
+/home/smazurchuk/.bashrc: line 14: Export: command not found
+/home/smazurchuk/.bashrc: line 14: Export: command not found
